@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RayShooter.cs">
+    <Files>
+      <File FileName="Assets/Spin.cs" Line="9" Column="30" />
+      <File FileName="Assets/MouseLook.cs" Line="44" Column="3" />
+      <File FileName="Assets/FPSInput.cs" Line="8" Column="27" />
+      <File FileName="Assets/RayShooter.cs" Line="38" Column="3" />
+      <File FileName="Assets/ReactiveTarget.cs" Line="10" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
