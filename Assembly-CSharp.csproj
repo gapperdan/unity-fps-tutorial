@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\RayShooter.cs" />
      <Compile Include="Assets\Scripts\ReactiveTarget.cs" />
      <Compile Include="Assets\Scripts\SceneController.cs" />
+     <Compile Include="Assets\Scripts\SettingsPopup.cs" />
      <Compile Include="Assets\Scripts\Spin.cs" />
      <Compile Include="Assets\Scripts\UIController.cs" />
      <Compile Include="Assets\Scripts\WanderingAI.cs" />
