@@ -12,6 +12,6 @@ public class SettingsPopup : MonoBehaviour {
 		Debug.Log("Name: " + name);
 	}
 	public void OnSpeedValue(float speed) {
-		Debug.Log("Speed: " + speed);
+		Messenger<float>.Broadcast(GameEvent.SPEED_CHANGED, speed);
 	}
 }
