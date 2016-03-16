@@ -6,16 +6,28 @@ public class UIController : MonoBehaviour
 {	
 	[SerializeField] private Text scoreLabel;
 	[SerializeField] private SettingsPopup settingsPopup;
+	private int _score;
 
-	public void Start() {
-		settingsPopup.Close ();
-	}
-
-	void Update () {
-		scoreLabel.text = Time.realtimeSinceStartup.ToString ();
-	}
+	void Start() {
+		_score = 0;
+		scoreLabel.text = _score.ToString();
+		settingsPopup.Close();
+	}		
 
 	public void OnOpenSettings () {
 		settingsPopup.Open (); 
+	}
+
+	void Awake() {
+		Messenger.AddListener(GameEvent.ENEMY_HIT, OnEnemyHit);
+	}
+
+	void OnDestroy() {
+		Messenger.RemoveListener(GameEvent.ENEMY_HIT, OnEnemyHit);
+	}
+
+	private void OnEnemyHit() {
+		_score += 1;
+		scoreLabel.text = _score.ToString();
 	}
 }
